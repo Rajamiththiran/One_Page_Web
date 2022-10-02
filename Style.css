@@ -22,3 +22,111 @@ a{
     align-items: center;
     justify-content: center;
 }
+
+/* up section */
+#up {
+    background-image: url(./images/2878922.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#up .up{
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#up::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#up h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: Text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+
+#up h1:nth-child(1){
+    animation-delay: 1s;
+}
+#up h1:nth-child(2){
+    animation-delay: 2s;
+}
+#up h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+#up h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: Text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+
+#up h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+#up h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#up h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+
+#up .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: .3s ease ;
+    transition-property: background-color, color;
+}
+#up .cta:hover {
+    color: white;
+    background-color: crimson;
+}
+
+
+/* end of up section */
+
+/* keyframe */
+@keyframes Text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes Text_reveal{
+    100%{
+        color: white;
+    }
+}
+/* end of keyframe */
