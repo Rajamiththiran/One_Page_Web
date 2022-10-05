@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 
 }
 
@@ -68,6 +69,10 @@ p{
 }
 
 /* up section */
+
+#up .cta{
+    color: white;
+}
 #up {
     background-image: url(./images/2878922.jpg);
     background-size: cover;
@@ -276,7 +281,7 @@ p{
     
 }
 #project .project-img img{
-    transition: .3s ease transform;
+    transition: .2s ease transform;
 }
 #project .project-item:hover .project-img img{
     transform:scale(1.1)
@@ -309,6 +314,22 @@ p{
 }
 #about .about-right p{
     margin-bottom: 20px;
+}
+#about .about-left .about-img{
+    height:100%;
+    width:100%;
+    position:relative;
+    border: 10px solid white;
+}
+#about .about-left .about-img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top : 19px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
 }
 
 /* end of about section */
