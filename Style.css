@@ -67,6 +67,14 @@ p{
     color: white;
     background-color: crimson;
 }
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.brand h1 span{
+    color: crimson;
+}
 
 /* up section */
 
@@ -148,7 +156,7 @@ p{
 #service .service{
     flex-direction: column;
     text-align: center;
-    max-width: 800px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -212,7 +220,7 @@ p{
 
 #project .project{
     flex-direction: column;
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -263,7 +271,7 @@ p{
 }
 #project .project-img{
    
-    width:100%;
+    
    flex-basis: 50%;
    height:300px;
    overflow: hidden;
@@ -378,7 +386,47 @@ p{
 
 }
 
-/* contact section */
+/* end of contact section */
+
+/* footer section */
+#footer{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#footer h2{
+    font-size: 1.8rem;
+    font-weight: 500px;
+    color: white;
+    letter-spacing:.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer .social-icon{
+    display:flex;
+    margin-bottom: 30px;
+}
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+#footer .social-item img{
+    filter: grayscale(1);
+    transition: .3s ease filter transform;
+}
+#footer .social-item:hover img{
+    filter: grayscale(0);
+    transform:scale(1.1);
+}
+#footer p{
+    color: white; 
+}
+/* end of footer section */
 
 /* keyframe */
 @keyframes Text_reveal_box{
@@ -403,3 +451,12 @@ p{
     }
 }
 /* end of keyframe */
+
+/* media query for tablet */
+@media only screen and (min-width: 768px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+}
+/* end of media query for tablet */
