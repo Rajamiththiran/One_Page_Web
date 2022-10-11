@@ -166,7 +166,6 @@ p{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* width: 800px; */
     margin-top: 40px;
 }
 #service .service-item{
@@ -458,5 +457,30 @@ p{
         font-size: 2.5rem;
         padding: 20px 60px;
     }
+    h1 .section-title{
+        font-size: 6rem;
+    }
+
+    /* up */
+    #up h1{
+        font-size: 7rem;
+    }
+    /* end up */
+
+    /* service */
+    #service .service-bottom .service-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    /* end service */
+
+    /* project */
+    #project .project{
+        height: 400px;
+        margin: 0;
+        width: ;
+    }
+    /* end project */
+
 }
 /* end of media query for tablet */
