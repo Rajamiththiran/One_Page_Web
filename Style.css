@@ -475,12 +475,42 @@ p{
     /* end service */
 
     /* project */
-    #project .project{
+    #project .project-item{
+        flex-direction: row;
+    }
+    #project .project-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    #project .project-item{
         height: 400px;
         margin: 0;
-        width: ;
+        width: 100%;
+        border-radius: 0;
+    }
+    #project .project-bottom .project-info{
+        height: 100%;
+    }
+    #project .project-bottom .project-img{
+        height: 100%;
     }
     /* end project */
+
+    /* About */
+    #about .about{
+        flex-direction: row;
+    }
+    #about .about-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .about-left .about-img::after{
+        left: -45px;
+        top: 34px;
+        width: 98%;
+        border: 10px solid crimson;
+    }
+    /* end  About */
 
 }
 /* end of media query for tablet */
